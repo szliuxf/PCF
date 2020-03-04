@@ -27,7 +27,7 @@ export const TooltipedControlCompoment : React.FC<IProps> = (props) => {
     
     return (
             <TooltipHost content = { props.tooltip != null ? props.tooltip : "" } >
-                <TextField value = { props.value != null ? props.value : undefined } onChange={onChangeValue} />
+                <TextField defaultValue = { props.value != null ? props.value : undefined } onChange={onChangeValue} />
             </TooltipHost>
     );
 };
